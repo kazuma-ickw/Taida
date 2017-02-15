@@ -2,8 +2,8 @@
 //  TaidaCell.swift
 //  Taida
 //
-//  Created by 市川主馬 on 2017/02/12.
-//  Copyright © 2017年 市川主馬. All rights reserved.
+//  Created by K_Ichi on 2017/02/12.
+//  Copyright © 2017年 K_Ichi. All rights reserved.
 //
 
 import UIKit
