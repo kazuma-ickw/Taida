@@ -30,7 +30,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -61,6 +61,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         button.addTarget(self, action: #selector(ViewController.clickButton), for: .touchUpInside)
         
         selectedCell.window?.addSubview(button)
+        self.tableView.frame = CGRect(x: 0, y: (self.view.bounds.height * 0.8), width: self.view.bounds.width, height: self.view.bounds.height)
     }
     
     func clickButton(sender: UIControl) -> Void {
@@ -77,7 +78,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
         }
         sender.removeFromSuperview()
-        
+        self.tableView.frame = CGRect(x: 0, y: 50, width: self.view.bounds.width, height: self.view.bounds.height)
     }
 
 
