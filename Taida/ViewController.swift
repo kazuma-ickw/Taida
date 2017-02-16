@@ -43,7 +43,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         print(indexPath)
         let selectedCell: TaidaCell = tableView.cellForRow(at: indexPath) as! TaidaCell
         print(selectedCell)
-        let webView: UIWebView = UIWebView(frame: CGRect(x: 0, y: 50, width: self.view.bounds.width, height: self.view.bounds.height / 1.5))
+        let webView: UIWebView = UIWebView(frame: CGRect(x: 0, y: 50, width: self.view.bounds.width, height: self.view.bounds.height * 0.7))
         
         let url = NSURL(string: "https://google.com")
         webView.loadRequest(NSURLRequest(url: url as! URL) as URLRequest)
@@ -51,9 +51,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         print(tableView.cellForRow(at: indexPath)!)
         tableView.deselectRow(at: indexPath, animated: false)
         
-        let button: UIButton = UIButton(frame: CGRect(x: 0, y: 100, width: 50, height: 50))
-        button.setTitle("test", for: .normal)
-        button.setTitleColor(UIColor.black, for: .normal)
+        let button: UIButton = UIButton(frame: CGRect(x: 10, y: (self.view.bounds.height * 0.7) - 10, width: 100, height: 50))
+        button.backgroundColor = UIColor.black
+        button.layer.cornerRadius = 5
+        button.layer.opacity = 0.8
+        button.clipsToBounds = true
+        button.setTitle("Back", for: .normal)
+        button.setTitleColor(UIColor.white, for: .normal)
         button.addTarget(self, action: #selector(ViewController.clickButton), for: .touchUpInside)
         
         selectedCell.window?.addSubview(button)
