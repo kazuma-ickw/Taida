@@ -2,7 +2,6 @@
 //  TaidaCell.swift
 //  Taida
 //
-//  Created by K_Ichi on 2017/02/12.
 //  Copyright © 2017年 K_Ichi. All rights reserved.
 //
 

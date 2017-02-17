@@ -2,7 +2,6 @@
 //  ViewController.swift
 //  Taida
 //
-//  Created by K_Ichi on 2017/01/31.
 //  Copyright © 2017年 K_Ichi. All rights reserved.
 //
 
