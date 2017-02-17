@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D1A4D51D1E40DCB200F82F5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4D51C1E40DCB200F82F5E /* AppDelegate.swift */; };
-		D1A4D51F1E40DCB200F82F5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4D51E1E40DCB200F82F5E /* ViewController.swift */; };
 		D1A4D5221E40DCB200F82F5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A4D5201E40DCB200F82F5E /* Main.storyboard */; };
 		D1A4D5241E40DCB200F82F5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1A4D5231E40DCB200F82F5E /* Assets.xcassets */; };
 		D1A4D5271E40DCB200F82F5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A4D5251E40DCB200F82F5E /* LaunchScreen.storyboard */; };
 		D1A4D5321E40DCB200F82F5E /* TaidaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4D5311E40DCB200F82F5E /* TaidaTests.swift */; };
 		D1A4D53D1E40DCB200F82F5E /* TaidaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4D53C1E40DCB200F82F5E /* TaidaUITests.swift */; };
-		D1A4D54D1E50929C00F82F5E /* TaidaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4D54C1E50929C00F82F5E /* TaidaCell.swift */; };
+		D1A4D5531E5681BC00F82F5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4D5521E5681BC00F82F5E /* AppDelegate.swift */; };
+		D1A4D5551E56820600F82F5E /* TaidaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4D5541E56820600F82F5E /* TaidaCell.swift */; };
+		D1A4D5571E56821B00F82F5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4D5561E56821B00F82F5E /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,6 @@
 
 /* Begin PBXFileReference section */
 		D1A4D5191E40DCB200F82F5E /* Taida.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taida.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1A4D51C1E40DCB200F82F5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D1A4D51E1E40DCB200F82F5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D1A4D5211E40DCB200F82F5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1A4D5231E40DCB200F82F5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1A4D5261E40DCB200F82F5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,7 +46,9 @@
 		D1A4D5381E40DCB200F82F5E /* TaidaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaidaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A4D53C1E40DCB200F82F5E /* TaidaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaidaUITests.swift; sourceTree = "<group>"; };
 		D1A4D53E1E40DCB200F82F5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1A4D54C1E50929C00F82F5E /* TaidaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaidaCell.swift; sourceTree = "<group>"; };
+		D1A4D5521E5681BC00F82F5E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Sources/AppDelegate.swift; sourceTree = "<group>"; };
+		D1A4D5541E56820600F82F5E /* TaidaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaidaCell.swift; path = Sources/Views/TaidaCell.swift; sourceTree = "<group>"; };
+		D1A4D5561E56821B00F82F5E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Sources/Controllers/ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +129,7 @@
 		D1A4D54E1E56805800F82F5E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D1A4D51C1E40DCB200F82F5E /* AppDelegate.swift */,
+				D1A4D5521E5681BC00F82F5E /* AppDelegate.swift */,
 				D1A4D5511E56809500F82F5E /* Views */,
 				D1A4D5501E56808A00F82F5E /* Models */,
 				D1A4D54F1E56807700F82F5E /* Controllers */,
@@ -140,7 +140,7 @@
 		D1A4D54F1E56807700F82F5E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D1A4D51E1E40DCB200F82F5E /* ViewController.swift */,
+				D1A4D5561E56821B00F82F5E /* ViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -155,7 +155,7 @@
 		D1A4D5511E56809500F82F5E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D1A4D54C1E50929C00F82F5E /* TaidaCell.swift */,
+				D1A4D5541E56820600F82F5E /* TaidaCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -294,9 +294,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1A4D51F1E40DCB200F82F5E /* ViewController.swift in Sources */,
-				D1A4D51D1E40DCB200F82F5E /* AppDelegate.swift in Sources */,
-				D1A4D54D1E50929C00F82F5E /* TaidaCell.swift in Sources */,
+				D1A4D5531E5681BC00F82F5E /* AppDelegate.swift in Sources */,
+				D1A4D5551E56820600F82F5E /* TaidaCell.swift in Sources */,
+				D1A4D5571E56821B00F82F5E /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
