@@ -15,7 +15,7 @@ class TaidaCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         titleLabel = UILabel(frame: CGRect(x: 30, y: 20, width: 300, height: 15));
         titleLabel.text = "oh";
-        titleLabel.font = UIFont.systemFont(ofSize: 12)
+        titleLabel.font = UIFont.systemFont(ofSize: 14)
         self.addSubview(titleLabel);
     }
     

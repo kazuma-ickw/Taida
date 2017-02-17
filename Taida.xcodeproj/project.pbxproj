@@ -99,13 +99,11 @@
 		D1A4D51B1E40DCB200F82F5E /* Taida */ = {
 			isa = PBXGroup;
 			children = (
-				D1A4D51C1E40DCB200F82F5E /* AppDelegate.swift */,
-				D1A4D51E1E40DCB200F82F5E /* ViewController.swift */,
+				D1A4D54E1E56805800F82F5E /* Sources */,
 				D1A4D5201E40DCB200F82F5E /* Main.storyboard */,
 				D1A4D5231E40DCB200F82F5E /* Assets.xcassets */,
 				D1A4D5251E40DCB200F82F5E /* LaunchScreen.storyboard */,
 				D1A4D5281E40DCB200F82F5E /* Info.plist */,
-				D1A4D54C1E50929C00F82F5E /* TaidaCell.swift */,
 			);
 			path = Taida;
 			sourceTree = "<group>";
@@ -126,6 +124,40 @@
 				D1A4D53E1E40DCB200F82F5E /* Info.plist */,
 			);
 			path = TaidaUITests;
+			sourceTree = "<group>";
+		};
+		D1A4D54E1E56805800F82F5E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D1A4D51C1E40DCB200F82F5E /* AppDelegate.swift */,
+				D1A4D5511E56809500F82F5E /* Views */,
+				D1A4D5501E56808A00F82F5E /* Models */,
+				D1A4D54F1E56807700F82F5E /* Controllers */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		D1A4D54F1E56807700F82F5E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D1A4D51E1E40DCB200F82F5E /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D1A4D5501E56808A00F82F5E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D1A4D5511E56809500F82F5E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1A4D54C1E50929C00F82F5E /* TaidaCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
