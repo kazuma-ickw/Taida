@@ -41,6 +41,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         print("select")
         print(indexPath)
         let selectedCell: TaidaCell = tableView.cellForRow(at: indexPath) as! TaidaCell
+        selectedCell.feed = Feed(feedTitle: "title1", feedUrl: URL(fileURLWithPath: "https://google.com"))
         print(selectedCell)
         let webView: UIWebView = UIWebView(frame: CGRect(x: 0, y: 50, width: self.view.bounds.width, height: self.view.bounds.height * 0.7))
         

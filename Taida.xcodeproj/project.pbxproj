@@ -15,6 +15,7 @@
 		D1A4D5531E5681BC00F82F5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4D5521E5681BC00F82F5E /* AppDelegate.swift */; };
 		D1A4D5551E56820600F82F5E /* TaidaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4D5541E56820600F82F5E /* TaidaCell.swift */; };
 		D1A4D5571E56821B00F82F5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4D5561E56821B00F82F5E /* ViewController.swift */; };
+		D1A4D5591E588D7D00F82F5E /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4D5581E588D7D00F82F5E /* Feed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D1A4D5521E5681BC00F82F5E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Sources/AppDelegate.swift; sourceTree = "<group>"; };
 		D1A4D5541E56820600F82F5E /* TaidaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaidaCell.swift; path = Sources/Views/TaidaCell.swift; sourceTree = "<group>"; };
 		D1A4D5561E56821B00F82F5E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Sources/Controllers/ViewController.swift; sourceTree = "<group>"; };
+		D1A4D5581E588D7D00F82F5E /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Feed.swift; path = Sources/Models/Feed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		D1A4D5501E56808A00F82F5E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D1A4D5581E588D7D00F82F5E /* Feed.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1A4D5531E5681BC00F82F5E /* AppDelegate.swift in Sources */,
+				D1A4D5591E588D7D00F82F5E /* Feed.swift in Sources */,
 				D1A4D5551E56820600F82F5E /* TaidaCell.swift in Sources */,
 				D1A4D5571E56821B00F82F5E /* ViewController.swift in Sources */,
 			);
