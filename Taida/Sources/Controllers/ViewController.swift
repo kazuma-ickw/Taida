@@ -45,8 +45,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         print(selectedCell)
         let webView: UIWebView = UIWebView(frame: CGRect(x: 0, y: 50, width: self.view.bounds.width, height: self.view.bounds.height * 0.7))
         
-        print(selectedCell.feed.url)
-        let url = NSURL(string: "https://google.com")
         webView.loadRequest(URLRequest(url: selectedCell.feed.url))
         selectedCell.window?.addSubview(webView)
         print(tableView.cellForRow(at: indexPath)!)
