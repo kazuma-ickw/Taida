@@ -41,12 +41,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         print("select")
         print(indexPath)
         let selectedCell: TaidaCell = tableView.cellForRow(at: indexPath) as! TaidaCell
-        selectedCell.feed = Feed(feedTitle: "title1", feedUrl: URL(fileURLWithPath: "https://google.com"))
+        selectedCell.feed = Feed(feedTitle: "title1", feedUrl: URL(string: "https://google.com")!)
         print(selectedCell)
         let webView: UIWebView = UIWebView(frame: CGRect(x: 0, y: 50, width: self.view.bounds.width, height: self.view.bounds.height * 0.7))
         
+        print(selectedCell.feed.url)
         let url = NSURL(string: "https://google.com")
-        webView.loadRequest(NSURLRequest(url: url as! URL) as URLRequest)
+        webView.loadRequest(URLRequest(url: selectedCell.feed.url))
         selectedCell.window?.addSubview(webView)
         print(tableView.cellForRow(at: indexPath)!)
         tableView.deselectRow(at: indexPath, animated: false)
