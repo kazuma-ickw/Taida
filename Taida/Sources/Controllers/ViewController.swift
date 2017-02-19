@@ -10,6 +10,14 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var tableView: UITableView = UITableView()
+    
+    let feeds: Array = [
+        (title: "google", url: "https://google.com"),
+        (title: "google", url: "https://google.com"),
+        (title: "google", url: "https://google.com"),
+        (title: "google", url: "https://google.com"),
+        (title: "google", url: "https://google.com")
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,11 +37,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return feeds.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: TaidaCell = TaidaCell()
+        cell.feed = Feed(
+            feedTitle: feeds[indexPath.row].title,
+            feedUrl: URL(string: feeds[indexPath.row].url)!)
         return cell
     }
     
