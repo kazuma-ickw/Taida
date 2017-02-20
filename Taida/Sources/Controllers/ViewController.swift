@@ -28,6 +28,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.frame = CGRect(x: 0, y: 50, width: self.view.bounds.width, height: self.view.bounds.height)
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        let v = UIView()
+        v.backgroundColor = UIColor.clear
+        self.tableView.tableFooterView = v
         self.view.addSubview(self.tableView)
     }
 
