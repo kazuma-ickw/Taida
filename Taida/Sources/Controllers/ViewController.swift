@@ -55,43 +55,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         print("select")
         print(indexPath)
         let selectedCell: TaidaCell = tableView.cellForRow(at: indexPath) as! TaidaCell
-        selectedCell.feed = Feed(feedTitle: "title1", feedUrl: URL(string: "https://google.com")!)
-        print(selectedCell)
-        let webView: UIWebView = UIWebView(frame: CGRect(x: 0, y: 50, width: self.view.bounds.width, height: self.view.bounds.height * 0.7))
-        
-        webView.loadRequest(URLRequest(url: selectedCell.feed.url))
-        selectedCell.window?.addSubview(webView)
-        print(tableView.cellForRow(at: indexPath)!)
+        selectedCell.onClick()
+        tableView.contentOffset = CGPoint(x: 0, y: selectedCell.frame.origin.y)
         tableView.deselectRow(at: indexPath, animated: false)
-        
-        let button: UIButton = UIButton(frame: CGRect(x: 10, y: (self.view.bounds.height * 0.7) - 10, width: 100, height: 50))
-        button.backgroundColor = UIColor.black
-        button.layer.cornerRadius = 5
-        button.layer.opacity = 0.8
-        button.clipsToBounds = true
-        button.setTitle("Back", for: .normal)
-        button.setTitleColor(UIColor.white, for: .normal)
-        button.addTarget(self, action: #selector(ViewController.clickButton), for: .touchUpInside)
-        
-        selectedCell.window?.addSubview(button)
-        self.tableView.frame = CGRect(x: 0, y: (self.view.bounds.height * 0.8), width: self.view.bounds.width, height: self.view.bounds.height)
     }
     
-    func clickButton(sender: UIControl) -> Void {
-        print("clickButton")
-        print(sender)
-        let subviews = sender.superview?.subviews
-        if let subviews = subviews {
-            print(subviews)
-        }
-        for subview in subviews! {
-            print(subview)
-            if subview is UIWebView {
-                subview.removeFromSuperview()
-            }
-        }
-        sender.removeFromSuperview()
-        self.tableView.frame = CGRect(x: 0, y: 50, width: self.view.bounds.width, height: self.view.bounds.height)
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
     }
 
 

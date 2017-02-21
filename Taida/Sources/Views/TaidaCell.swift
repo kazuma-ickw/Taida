@@ -26,4 +26,40 @@ class TaidaCell: UITableViewCell {
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
     }
+    
+    func onClick() -> Void {
+        self.frame = CGRect(x: self.frame.origin.x, y: self.frame.origin.y, width: self.bounds.width, height: (self.superview?.frame.height)! - 200)
+        let webView: UIWebView = UIWebView(frame: CGRect(x: self.bounds.origin.x, y: self.bounds.origin.y, width: self.bounds.width, height: self.bounds.height))
+        
+        webView.isUserInteractionEnabled = true
+        webView.scrollView.isScrollEnabled = true
+        webView.loadRequest(URLRequest(url: feed.url))
+        self.addSubview(webView)
+        
+        let button: UIButton = UIButton(frame: CGRect(x: 10, y: self.bounds.height - 50, width: 100, height: 50))
+        button.backgroundColor = UIColor.black
+        button.layer.cornerRadius = 5
+        button.layer.opacity = 0.8
+        button.clipsToBounds = true
+        button.setTitle("Back", for: .normal)
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.addTarget(self, action: #selector(TaidaCell.clickButton), for: .touchUpInside)
+        
+        self.addSubview(button)
+    }
+    
+    func clickButton(sender: UIControl) -> Void {
+        print("clickButton")
+        print(sender)
+        let subviews = sender.superview?.subviews
+        
+        for subview in subviews! {
+            print(subview)
+            if subview is UIWebView {
+                subview.removeFromSuperview()
+            }
+        }
+        sender.removeFromSuperview()
+        self.frame = CGRect(x: self.frame.origin.x, y: self.frame.origin.y, width: self.bounds.width, height: 50)
+    }
 }
