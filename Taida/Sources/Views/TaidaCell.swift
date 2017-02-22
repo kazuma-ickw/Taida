@@ -51,12 +51,13 @@ class TaidaCell: UITableViewCell {
     func clickButton(sender: UIControl) -> Void {
         print("clickButton")
         print(sender)
-        let subviews = sender.superview?.subviews
         
-        for subview in subviews! {
-            print(subview)
-            if subview is UIWebView {
-                subview.removeFromSuperview()
+        if let superview = sender.superview {
+            for subview in superview.subviews {
+                print(subview)
+                if subview is UIWebView {
+                    subview.removeFromSuperview()
+                }
             }
         }
         sender.removeFromSuperview()
