@@ -36,7 +36,7 @@ class TaidaCell: UITableViewCell {
         webView.loadRequest(URLRequest(url: feed.url))
         self.addSubview(webView)
         
-        let button: UIButton = UIButton(frame: CGRect(x: 10, y: self.bounds.height - 50, width: 100, height: 50))
+        let button: UIButton = UIButton(frame: CGRect(x: 10, y: self.bounds.height - 60, width: 100, height: 50))
         button.backgroundColor = UIColor.black
         button.layer.cornerRadius = 5
         button.layer.opacity = 0.8
