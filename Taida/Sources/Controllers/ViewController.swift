@@ -54,9 +54,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("select")
         print(indexPath)
-        let selectedCell: TaidaCell = tableView.cellForRow(at: indexPath) as! TaidaCell
-        selectedCell.onClick()
-        tableView.contentOffset = CGPoint(x: 0, y: selectedCell.frame.origin.y)
+        if let selectedCell = tableView.cellForRow(at: indexPath) as? TaidaCell {
+            selectedCell.onClick()
+            tableView.contentOffset = CGPoint(x: 0, y: selectedCell.frame.origin.y)
+        }
         tableView.deselectRow(at: indexPath, animated: false)
     }
     
