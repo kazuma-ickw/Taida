@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		796018EDC52763FFA1436ACD /* Pods_Taida.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB776640AAD16A9EB74EB5A /* Pods_Taida.framework */; };
 		D1A4D5221E40DCB200F82F5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A4D5201E40DCB200F82F5E /* Main.storyboard */; };
 		D1A4D5241E40DCB200F82F5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1A4D5231E40DCB200F82F5E /* Assets.xcassets */; };
 		D1A4D5271E40DCB200F82F5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A4D5251E40DCB200F82F5E /* LaunchScreen.storyboard */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7452B46174387DC8E20C4224 /* Pods-Taida.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taida.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Taida/Pods-Taida.debug.xcconfig"; sourceTree = "<group>"; };
+		ACB776640AAD16A9EB74EB5A /* Pods_Taida.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Taida.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A4D5191E40DCB200F82F5E /* Taida.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taida.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A4D5211E40DCB200F82F5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1A4D5231E40DCB200F82F5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		D1A4D5541E56820600F82F5E /* TaidaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaidaCell.swift; path = Sources/Views/TaidaCell.swift; sourceTree = "<group>"; };
 		D1A4D5561E56821B00F82F5E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Sources/Controllers/ViewController.swift; sourceTree = "<group>"; };
 		D1A4D5581E588D7D00F82F5E /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Feed.swift; path = Sources/Models/Feed.swift; sourceTree = "<group>"; };
+		ED1741F35EDF9DCB4470D56C /* Pods-Taida.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taida.release.xcconfig"; path = "Pods/Target Support Files/Pods-Taida/Pods-Taida.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				796018EDC52763FFA1436ACD /* Pods_Taida.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6003DC68C20C33893294B0D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7452B46174387DC8E20C4224 /* Pods-Taida.debug.xcconfig */,
+				ED1741F35EDF9DCB4470D56C /* Pods-Taida.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8FBB79C5DFD1AAC380DC59D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACB776640AAD16A9EB74EB5A /* Pods_Taida.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D1A4D5101E40DCB100F82F5E = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				D1A4D5301E40DCB200F82F5E /* TaidaTests */,
 				D1A4D53B1E40DCB200F82F5E /* TaidaUITests */,
 				D1A4D51A1E40DCB200F82F5E /* Products */,
+				6003DC68C20C33893294B0D3 /* Pods */,
+				8FBB79C5DFD1AAC380DC59D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,9 +194,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1A4D5411E40DCB200F82F5E /* Build configuration list for PBXNativeTarget "Taida" */;
 			buildPhases = (
+				E23C27DB7369A4E592A711D1 /* [CP] Check Pods Manifest.lock */,
 				D1A4D5151E40DCB100F82F5E /* Sources */,
 				D1A4D5161E40DCB100F82F5E /* Frameworks */,
 				D1A4D5171E40DCB100F82F5E /* Resources */,
+				965DF5B1ECCAAC02BF977F8E /* [CP] Embed Pods Frameworks */,
+				FE15D8132EC362F3ED7DC7C8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -291,6 +318,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		965DF5B1ECCAAC02BF977F8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Taida/Pods-Taida-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E23C27DB7369A4E592A711D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE15D8132EC362F3ED7DC7C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Taida/Pods-Taida-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D1A4D5151E40DCB100F82F5E /* Sources */ = {
@@ -450,6 +525,7 @@
 		};
 		D1A4D5421E40DCB200F82F5E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7452B46174387DC8E20C4224 /* Pods-Taida.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Taida/Info.plist;
@@ -462,6 +538,7 @@
 		};
 		D1A4D5431E40DCB200F82F5E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED1741F35EDF9DCB4470D56C /* Pods-Taida.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Taida/Info.plist;
