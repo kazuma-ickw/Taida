@@ -18,8 +18,8 @@ class TaidaCell: UITableViewCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String!) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        titleLabel = UILabel(frame: CGRect(x: 30, y: 20, width: 300, height: 15));
-        titleLabel.font = UIFont.systemFont(ofSize: 14)
+        titleLabel = UILabel(frame: CGRect(x: 30, y: 30, width: 300, height: self.bounds.height));
+        titleLabel.font = UIFont.systemFont(ofSize: 20)
         self.addSubview(titleLabel);
     }
     
@@ -61,6 +61,6 @@ class TaidaCell: UITableViewCell {
             }
         }
         sender.removeFromSuperview()
-        self.frame = CGRect(x: self.frame.origin.x, y: self.frame.origin.y, width: self.bounds.width, height: 50)
+        self.frame = CGRect(x: self.frame.origin.x, y: self.frame.origin.y, width: self.bounds.width, height: 100)
     }
 }
